@@ -1,0 +1,76 @@
+<zk>
+	<hlayout height="300px">
+		<zscript><![CDATA[
+	void moveWin(Event evt) {
+		DropEvent event = (DropEvent) evt;
+		Component dragged = event.getDragged();
+		Component target = event.getTarget();
+		Component po = dragged.getParent();
+		po.removeChild(dragged);
+		dragged.setParent(target);
+		loglist.appendChild(new Label("dragged:" + event.getDragged().getId() + ", target:" + event.getTarget().getId()));
+	}
+]]></zscript>
+		<window id="leftWin" width="200px" title="Box layout"
+			border="normal" height="250px" onDrop="moveWin(event)"
+			droppable="true">
+				<window style="display:inline-block" border="normal"
+					id="w0" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					0
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w1" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					1
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w2" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					2
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w3" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					3
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w4" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					4
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w5" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					5
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w6" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					6
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w7" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					7
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w8" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					8
+				</window>
+				<window style="display:inline-block" border="normal"
+					id="w9" onDrop="moveWin(event)" draggable="true" droppable="true"
+					width="40px">
+					9
+				</window>
+		</window>
+		<window id="rightWin" width="200px" title="Box layout"
+			border="normal" height="250px" onDrop="moveWin(event)"
+			droppable="true">
+		</window>
+		<vlayout id="loglist" spacing="0" height="250px"
+			width="200px" style="overflow:auto">
+		</vlayout>
+	</hlayout>
+</zk>

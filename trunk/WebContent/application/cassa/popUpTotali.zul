@@ -1,0 +1,29 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Totale Tavolo" border="normal" id="popupTotali" apply="it.qube.controller.PopupCassaController" >
+
+<groupbox mold="3d" width="100%">
+    <caption image="../img/logoIceLittle.jpg" label="Gelati Da Pagare" />
+    <hlayout spacing="35px">
+		<vlayout>
+
+			<grid id="gelatiCassaGrid">
+			    <columns sizable="true">
+			        <column label="1° Gusto"/>
+			        <column label="2° Gusto"/>
+			        <column label="3° Gusto"/>
+			        <column label="Prezzo"/>
+			    </columns>
+			</grid>
+			<groupbox id="groupboxTotale">
+		   		<caption label="Totale"/>
+				<div>
+					<textbox id="totale" mold="rounded"></textbox>
+					<button id="pagato">Pagato</button>
+			    </div> 
+			</groupbox>
+		</vlayout>
+	</hlayout>
+</groupbox>
+</window>
+</zk>

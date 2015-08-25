@@ -1,0 +1,74 @@
+<?page title="banco" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="banco" border="normal" apply="it.qube.controller.ContenutoBancoController" id="winTavoli">
+
+	<include id="center" src="tavoli.zul" width="100%"/>
+
+	<groupbox mold="3d" width="100%">
+	    <caption image="../img/logoIceLittle.jpg" label="Gelati" />
+	    <hlayout spacing="35px">
+	        <vlayout>
+	        	<grid>
+	        		<columns>
+	        		 <column width="10%"></column>
+	        		 <column width="18%"></column>
+	        		 <column width="18%"></column>
+	        		 <column width="18%"></column>
+	        		 <column width="18%"></column>
+	        		 <column width="8%"></column>
+	        		 <column width="10%"></column>
+	        		</columns>
+					<rows>
+						<row>
+							<div>
+					        	<label>Tavolo </label><intbox constraint="no negative,no zero,no empty" id="numeroTavolo" mold="rounded" width="50px"></intbox>
+							</div>
+							<div>
+					        	<label>Cono </label><combobox id="tagliaCono" autodrop="true" mold="rounded" constraint="no empty"></combobox>
+					        </div> 
+					        <div>
+					        	<label>Gusto </label><combobox id="gustouno" autodrop="true" mold="rounded"></combobox>
+					        </div> 
+					        <div>
+					        	<label>Gusto </label><combobox id="gustodue" autodrop="true" mold="rounded"></combobox>
+					        </div>
+					        <div>
+					        	<label>Gusto </label><combobox id="gustotre" autodrop="true" mold="rounded"></combobox>
+					        </div>
+					        <div>
+					        	<label>Panna</label><checkbox id="panna"></checkbox>
+					        </div>
+					        <div>
+								<button id="aggiungiGelato">aggiungi gelato</button>
+					        </div>	
+						</row>
+					</rows>
+	        	</grid>
+	        </vlayout>
+	    </hlayout>
+	</groupbox>
+
+
+
+	<groupbox mold="3d" width="100%">
+	    <caption image="../img/logoIceLittle.jpg" label="Gelati Da Fare" />
+	    <hlayout spacing="35px">
+	        <vlayout>
+				<grid id="bancoGelatiGrid" >
+					<columns sizable="true">
+						<column label="Tavolo"></column>
+						<column label="Dimensione"></column>
+						<column label="1° Gusto"></column>
+						<column label="2° Gusto"></column>
+						<column label="3° Gusto"></column>
+						<column label="Panna"></column>
+						<column label="Pagato"></column>
+					</columns>
+				</grid>
+	        </vlayout>
+	    </hlayout>
+	</groupbox>
+
+
+</window>
+</zk>

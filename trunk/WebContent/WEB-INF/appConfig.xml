@@ -1,0 +1,10 @@
+<?xml version = "1.0"?>
+<config>
+  <mailConfig>
+    <serverSMTP>Smtpsrv01</serverSMTP>
+    <porta>25</porta>
+    <user>username</user>
+    <password>password</password>
+    <from>lorenzo@mengoni.it</from>
+  </mailConfig>
+</config>

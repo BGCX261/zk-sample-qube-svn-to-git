@@ -1,0 +1,53 @@
+<?page title="ISA Quartz Manager" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style>
+		.jobFooter { padding-right: 15px; text-align: right; }
+		.jobFooter .z-label { font-weight: bold; } .north {
+		padding-right: 20px; text-align: right; } .north .z-label {
+		font-weight: bold; } .disappear { display:none; }
+	</style>
+	<zscript><![CDATA[
+	import it.qube.core.Utils;;
+	import org.zkoss.zul.Messagebox;
+]]></zscript>
+	<window id="winResetLogin" width="450px" title="Cambio Login"
+		border="normal" position="center" mode="overlapped"
+		apply="it.qube.controller.ResetLoginComposer">
+		<grid oddRowSclass="x" style="border:none">
+			<columns>
+				<column hflex="2"></column>
+				<column hflex="3"></column>
+			</columns>
+			<rows style="border:none">
+				<row style="border:none" spans="2" height="24px">
+					<div align="center">
+						<label value="..." id="usernameLabel"></label>
+					</div>
+
+				</row>
+				<row style="border:none">
+					<label value="Nuova password"></label>
+					<textbox hflex="1" id="newPassword1"
+						type="password">
+					</textbox>
+				</row>
+				<row style="border:none">
+					<label value="Nuova password (controllo)"></label>
+					<textbox hflex="1" id="newPassword2"
+						type="password">
+					</textbox>
+				</row>
+			</rows>
+		</grid>
+		<div align="center" style="padding:20px">
+			<hlayout>
+				<button id="btnChangelogin" label="Cambia" mold="trendy"
+					image="img/save.png">
+				</button>
+				<button label="Annulla" mold="trendy"
+					image="img/cancel.png" onClick="winResetLogin.detach()">
+				</button>
+			</hlayout>
+		</div>
+	</window>
+</zk>

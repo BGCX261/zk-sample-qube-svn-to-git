@@ -1,0 +1,15 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Cassa" border="normal" apply="it.qube.controller.PopupStatitsticheController" >
+
+<groupbox mold="3d" width="100%" >
+   	<caption image="../img/logoIceLittle.jpg" label="Gelati Chart" />
+	<hlayout spacing="35px">
+        <vlayout>
+			<chart id="mychart" width="550" height="400" paneColor="#ffffff"
+	    		type="pie" threeD="true" fgAlpha="128"></chart>
+	    </vlayout>
+	</hlayout>
+</groupbox>
+</window>
+</zk>

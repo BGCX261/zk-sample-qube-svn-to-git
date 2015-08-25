@@ -1,0 +1,60 @@
+<?page id="pageIndex" title="Qone" contentType="text/html;charset=UTF-8"?>
+
+<zk xmlns:w="client">
+	<window id="winIndex" width="100%" height="100%" contentStyle="overflow:auto">
+	   <style>
+    .silvergray .complex-layout,
+    .silvergray .complex-layout .z-south,
+    .silvergray .complex-layout .z-west {
+        background: #C5E6EF;
+    }
+    .breeze .complex-layout,
+    .breeze .complex-layout .z-south,
+    .breeze .complex-layout .z-west {
+        background: #F7F7F7;
+    }
+    </style>
+    <style>
+        .z-borderlayout {
+            background: #FFFFFF
+        }
+        .complex-layout .z-north {
+            background: #008BB6;
+        }
+        img.complex-layout-header-img {
+            padding: 0 10px;
+        }
+        .complex-layout-header-label {
+            position: relative;
+            top: -30px;
+            padding-left: 40px;
+            font-size: 24px;
+            color: White;
+            font-weight: bold;
+        }
+        .inner-border,
+        .inner-border .z-north,
+        .inner-border .z-west,
+        .inner-border .z-south,
+        .inner-border .z-east {
+            background: #FFFFFF;
+        }
+        .dl-link {
+            text-decoration: none;
+            cursor: pointer;
+        }
+ 
+    </style> 
+		<borderlayout sclass="complex-layout">
+			<north size="127px" border="0">
+				<include id="header" src="header.zul" height="40px"/>
+			</north>
+			<center>
+				<include id="center" src="banco/contenuto.zul" width="100%"/>
+			</center>
+			<south>
+				<include id="footer" src="footer.zul"/>
+			</south>
+		</borderlayout>
+	</window>
+</zk>

@@ -1,0 +1,62 @@
+<window width="500px" title="Login" border="normal" position="center"
+	apply="it.qube.controller.LoginComposer" mode="overlapped">
+	<div align="center" style="padding-bottom:20px;">
+		<label style="font-size:30px" value="Qone"></label>
+	</div>
+	<hlayout spacing="0">
+		<vlayout style="border:none; border-color:white;" spacing="0">
+			<image id="qubeHome" sclass="complex-layout-header-img"
+				src="/img/logoIce80.png" style="cursor: pointer" />
+		</vlayout>
+		<vlayout hflex="1" style="border:none; border-color:white;" spacing="0">
+			<grid oddRowSclass="x" style="border:none; border-color:white;" hflex="1">
+				<columns style="border:none; border-color:white;">
+					<column hflex="1" align="right"></column>
+					<column hflex="3"></column>
+				</columns>
+				<rows style="border:none; border-color:white;">
+					<row style="border:none ; border-color:white;">
+						<label value="Username"></label>
+						<textbox id="username"></textbox>
+					</row>
+					<row style="border:none; border-color:white;">
+						<label value="Password"></label>
+						<textbox id="password"
+							type="password">
+						</textbox>
+					</row>
+				</rows>
+			</grid>
+			<div align="center"
+				style="padding-top:4px; padding-bottom:12px; border:none; border-color:white;">
+				<button id="loginButton" label="Login" mold="trendy"></button>
+			</div>
+		</vlayout>
+	</hlayout>
+
+	<div id="divForgotPassword" align="right" style="">
+		<image id="imgForgotPassword" src="img/help.png"
+			onClick="sendDiv.setVisible(!sendDiv.isVisible())"
+			tooltiptext="Login dimenticato?" style="cursor:pointer">
+		</image>
+		<div id="sendDiv" visible="true"
+			style="background-color:#C0C0D0;">
+			<separator></separator>
+			<hlayout visible="true" style="padding-right:8px;">
+				<label value="Email dove inviare i dati"></label>
+				<textbox id="sendToEmail" cols="40"></textbox>
+			</hlayout>
+			<separator></separator>
+			<hlayout visible="true" style="padding-right:8px;">
+				<button id="btnSendUsername" label="Invia Username"
+					mold="trendy" image="img/mail-send.png">
+				</button>
+				<button id="btnSendPassword"
+					label="Invia reset password" mold="trendy"
+					image="img/mail-send.png">
+				</button>
+			</hlayout>
+			<separator></separator>
+		</div>
+	</div>
+</window>

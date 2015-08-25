@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<Resource name="jdbc/a2002" auth="Container" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30" maxWait="10000" username="sysdba"
+		password="masterkey" driverClassName="org.firebirdsql.jdbc.FBDriver"
+		url="jdbc:firebirdsql:localhost/3050:/lorenzo/agenzia2002.fdb" />
+
+	<Resource name="jdbc/zkTest" auth="Container" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30" maxWait="10000" username="sysdba"
+		password="masterkey" driverClassName="org.firebirdsql.jdbc.FBDriver"
+		url="jdbc:firebirdsql:localhost/3050:/lorenzo/zktest.fdb" />
+</Context>

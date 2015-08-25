@@ -1,0 +1,26 @@
+<?page title="header" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+
+<window id="winHeader" border="none" apply="it.qube.controller.HeaderController">
+
+    <div>
+		<label id="userInfo" sclass="labelHeader" style="color:white; float:right" ></label>
+        <image id="qubeHome" sclass="complex-layout-header-img" src="../img/logoIce.jpg" width="80px" height="80px" style="cursor: pointer"/>
+        <label sclass="complex-layout-header-label" value="Qone" />
+    </div>
+
+		<grid id="tableHeader" >
+		 	<columns>
+				<column width="100%" />
+			</columns>
+			<rows>
+				<row style="background:#008BB6">
+					<menubar id="menubar" />		
+				</row>
+			</rows>
+		</grid>
+
+</window>
+
+</zk>	

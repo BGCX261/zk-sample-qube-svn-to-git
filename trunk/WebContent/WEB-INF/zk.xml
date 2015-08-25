@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+	<device-config>
+		<device-type>ajax</device-type>
+		<timeout-uri>/timeout.zul</timeout-uri>
+		<!-- An empty URL can cause the	browser to reload the same URL -->
+	</device-config>
+
+	<listener>
+		<description>ThreadLocal Synchronization Listener</description>
+		<listener-class>org.zkoss.zkplus.util.ThreadLocalListener
+		</listener-class>
+	</listener>
+
+	<listener>
+		<description>Configurazione della webapp</description>
+		<listener-class>it.qube.core.SampleZkWebAppListener</listener-class>
+	</listener>
+
+	<listener>
+		<description>Avvio Execution ZK</description>
+		<listener-class>it.qube.core.ApplicationExecutionInit</listener-class>
+	</listener>
+
+	<listener>
+		<description>Controllo per la chiusura dei listener</description>
+		<listener-class>it.qube.core.DesktopListener</listener-class>
+	</listener>
+
+	<system-config>
+		<disable-event-thread>false</disable-event-thread>
+	</system-config>
+
+	<preference>
+		<name>org.zkoss.zk.ui.WebApp.name</name>
+		<value>Zk Sample</value>
+	</preference>
+
+</zk>

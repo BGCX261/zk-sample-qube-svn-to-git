@@ -1,0 +1,24 @@
+<groupbox mold="3d" width="100%">
+    <caption image="../img/logoIceLittle.jpg" label="Seleziona il tavolo che vuole pagare :)" />
+    
+	<hbox spacing="2">
+		<window border="normal" onClick="winTavoli$composer.openTable(1)" >1</window>
+		<vbox spacing="2">
+			<hbox spacing="2">
+				<window border="normal" onClick="winTavoli$composer.openTable(2)">2</window> <window border="normal" onClick="winCassa$composer.openTable(3)">3</window>
+				<vbox spacing="2">
+					<window border="normal" onClick="winTavoli$composer.openTable(4)">4</window> 
+					<window border="normal" onClick="winTavoli$composer.openTable(5)">5</window>
+				</vbox>
+			</hbox>
+			<hbox spacing="2">
+				<vbox spacing="2">
+					<window border="normal" onClick="winTavoli$composer.openTable(6)">6</window> 
+					<window border="normal" onClick="winTavoli$composer.openTable(7)">7</window>
+				</vbox>
+				<window border="normal" onClick="winTavoli$composer.openTable(8)">8</window> <window border="normal" onClick="winTavoli$composer.openTable(9)">9</window> <window border="normal" onClick="winTavoli$composer.openTable(10)">10</window>
+			</hbox>
+		</vbox>
+	</hbox>
+
+</groupbox>

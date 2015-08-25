@@ -1,0 +1,6 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Cassa" border="normal" apply="it.qube.controller.ContenutoCassaController" id="winTavoli">
+
+	<include id="center" src="tavoli.zul" width="100%"/></window>
+</zk>

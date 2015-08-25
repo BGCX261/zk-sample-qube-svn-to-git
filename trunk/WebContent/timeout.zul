@@ -1,0 +1,18 @@
+<window width="70%" title="Session Timeout" border="normal" position="center" mode="overlapped">
+	<div align="center">
+		<vbox>
+			<div>La pagina richiesta non è più disponibile.</div>
+			<div>
+				Questo è causato normalmente da un timeout di sessione,
+			</div>
+			<div>oppure per aver aperto troppe pagine,</div>
+			<div>o per un riavvio del server.</div>
+		</vbox>
+	</div>
+	<separator></separator>
+	<div align="center">
+		<button label="Home" mold="trendy" href="/" image="img/home.png"
+			tooltiptext="Fate click qui per ritornare alla pagina iniziale">
+		</button>
+	</div>
+</window>

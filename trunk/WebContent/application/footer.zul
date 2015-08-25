@@ -1,0 +1,10 @@
+<?page title="footer" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+
+<window id="footerWin">
+	<div sclass="idDivlUser" height="35px" width="100%">
+	Powered By Grazia &amp; Fabio
+	</div>
+</window>
+</zk>
